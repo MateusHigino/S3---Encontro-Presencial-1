@@ -1,0 +1,60 @@
+#menu-mobile {
+    display: block;
+}
+#menu-desktop {
+    display:none;
+}
+#header-logotipo {
+    height: 50px;
+}
+
+#header-espaco {
+    flex: 1 1 auto;
+}
+
+#menu-slide {
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    left: -200px;
+    width: 150px;
+    height: 200px;
+    border: 1px solid silver;
+    border-radius: 5px;
+    background-color: snow;
+    transition: 0.5s ease-in;
+}
+
+#menu-slide nav ul {
+    list-style: none;
+}
+
+#menu-slide nav ul li {
+    margin-top: 10px;
+}
+
+#menu-slide nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#menu-slide.show {
+    left: 5px;
+}
+
+.menu-buttom {
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+}
+
+@media screen and (min-width:760px) {
+   #menu-mobile {
+       display: none;
+   } 
+   #menu-desktop {
+       display: block;
+   }
+}
